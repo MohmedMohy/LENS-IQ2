@@ -14,8 +14,6 @@
 
   "dependencies": {
     "@lens/shared-types": "workspace:*",
-    "@lens/ui": "workspace:*",
-
     "next": "16.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"

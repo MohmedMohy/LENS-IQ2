@@ -1,20 +1,65 @@
 {
-   "$schema": "https://json.schemastore.org/tsconfig",
- "compilerOptions": {
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  "compilerOptions": {
+    
     "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+
+    
 
     "module": "ESNext",
-
     "moduleResolution": "Bundler",
+
+   
 
     "strict": true,
 
-    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
 
-    "resolveJsonModule": true,
+ 
 
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
 
-    "forceConsistentCasingInFileNames": true
+  
+    "skipLibCheck": true,
+
+    
+
+    "forceConsistentCasingInFileNames": true,
+
+   
+
+    "isolatedModules": true,
+
+    "noEmit": true,
+
+ 
+
+    "paths": {
+      "@lens/shared-types": [
+        "../shared-types/src/index.ts"
+      ],
+
+      "@lens/shared-types/*": [
+        "../shared-types/src/*"
+      ],
+
+      "@lens/engine": [
+        "../engine/src/index.ts"
+      ],
+
+      "@lens/engine/*": [
+        "../engine/src/*"
+      ],
+
+      "@lens/ui": [
+        "../ui/src/index.ts"
+      ]
+    }
   }
 }

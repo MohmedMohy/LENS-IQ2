@@ -3,7 +3,7 @@ import type {
     Program,
     Rule,
     EvaluateResponse
-} from "@lens/shared-types";
+} from "@lens/shared-types/";
 
 type EvaluateEngineInput = {
     application: Application;

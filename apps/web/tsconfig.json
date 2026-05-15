@@ -2,16 +2,7 @@
   "extends": "../../packages/typescript-config/base.json",
   "compilerOptions": {
     "jsx": "preserve",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "allowJs": false,
-    "strict": true,
-    "noEmit": true
-  },
-  "paths": {
-      "@lens/shared-types": [
-        "../../packages/shared-types/src/index.ts"
-      ]
+    
   },
   "include": [
     "**/*.ts",
