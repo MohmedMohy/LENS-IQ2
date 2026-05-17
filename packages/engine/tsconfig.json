@@ -6,13 +6,11 @@
     "rootDir": "src",
     "paths": {
       "@lens/shared-types": ["../shared-types/src/index.ts"],
-      "@lens/engine": ["./src/index.ts"]
     },
     "tsBuildInfoFile": "./.cache/tsconfig.tsbuildinfo"
   },
   "include": ["src"],
   "references": [
      {"path": "../shared-types" },
-     {"path": "../engine" }
   ]
 }

@@ -1,7 +1,7 @@
 import {
     calculateRiskScore,
     getRiskLevel
-} from "@lens/";
+} from "./index";
 
 const score = calculateRiskScore({
     id: 1,
