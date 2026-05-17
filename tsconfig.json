@@ -1,7 +1,19 @@
 {
-  "files": [],
+  "extends": "../../typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "./.cache/tsconfig.tsbuildinfo",
+    "paths": {
+      "@lens/shared-types": ["../shared-types/src/index.ts"]
+    }
+  },
+  "include": ["src"],
   "references": [
-    { "path": "./packages/shared-types" },
-    { "path": "./packages/engine" }
+    {
+      "path": "../shared-types"
+    }
   ]
 }
