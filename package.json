@@ -2,17 +2,17 @@
   "name": "lens-iq",
   "private": true,
   "packageManager": "pnpm@10.0.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean"
   },
+
   "devDependencies": {
     "turbo": "^2.0.0",
-    "typescript": "^5.8.0"
+    "typescript": "^5.8.0",
+    "tsup": "^8.0.0"
   }
 }

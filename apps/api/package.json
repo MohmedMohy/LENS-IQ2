@@ -12,6 +12,7 @@
     "@fastify/cors": "^11.2.0",
     "@fastify/env": "^6.0.0",
     "@lens/shared-types": "workspace:*",
+      "@lens/engine": "workspace:*",
     "@prisma/client": "^7.8.0",
     "fastify": "^5.8.5",
     "zod": "^4.4.3"

@@ -18,7 +18,8 @@
   },
 
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "tsup src/index.ts --dts",
+    "dev": "tsup src/index.ts --watch --dts",
     "test": "tsx src/test.ts"
   },
 

@@ -1,19 +1,23 @@
 {
-  "extends": "../../typescript-config/base.json",
+  "extends": "../../OM-AI/lens-iq/tsconfig.base.json",
+
   "compilerOptions": {
-    "baseUrl": ".",
     "composite": true,
     "outDir": "dist",
     "rootDir": "src",
     "tsBuildInfoFile": "./.cache/tsconfig.tsbuildinfo",
-    "paths": {
-      "@lens/shared-types": ["../shared-types/src/index.ts"]
-    }
+
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "ignoreDeprecations": "6.0"
   },
+
   "include": ["src"],
+
   "references": [
     {
-      "path": "../shared-types"
+      "path": "./packages/shared-types"
     }
   ]
 }

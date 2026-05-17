@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "strict": true,
+
+    "baseUrl": ".",
+
+    "paths": {
+      "@lens/engine": ["packages/engine/src"],
+      "@lens/shared-types": ["packages/shared-types/src"],
+      "@lens/config": ["packages/config/src"]
+    },
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    "declaration": true
+  }
+}
