@@ -1,29 +1,16 @@
 {
   "name": "@lens/engine",
   "version": "1.0.0",
-  "private": true,
 
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
 
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "dev": "tsx watch src/index.ts"
   },
 
   "dependencies": {
     "@lens/shared-types": "workspace:*"
-  },
-
-  "scripts": {
-    "build": "tsup src/index.ts --dts",
-    "dev": "tsup src/index.ts --watch --dts",
-    "test": "tsx src/test.ts"
-  },
-
-  "devDependencies": {
-    "rimraf": "^6.1.3"
   }
 }

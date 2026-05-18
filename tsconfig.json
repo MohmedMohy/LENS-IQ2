@@ -1,23 +1,14 @@
 {
-  "extends": "../../OM-AI/lens-iq/tsconfig.base.json",
-
-  "compilerOptions": {
-    "composite": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "tsBuildInfoFile": "./.cache/tsconfig.tsbuildinfo",
-
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-
-    "ignoreDeprecations": "6.0"
-  },
-
-  "include": ["src"],
-
+  "files": [],
   "references": [
     {
       "path": "./packages/shared-types"
+    },
+    {
+      "path": "./packages/engine"
+    },
+    {
+      "path": "./apps/api"
     }
   ]
 }
